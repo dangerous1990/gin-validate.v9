@@ -82,18 +82,7 @@ v.validate.RegisterTranslation("isValidMultiEmails", trans, ValidateMultiEmailsR
 3. 更多汉化请参考 gopkg.in/go-playground/validator.v9/translations/zh
 
 
-# 常见的问题
-1. 对于数字类型使用required，在传递0值的时候会报错
 
-解决办法： 可以加上isdefault,这样就可以传递0值了
-```
-type struct form {
-    id int 'json:"id" binding:"required,isdefault"'
-}
-```
-2. 对于字符串类型，慎用len标签
-
-解决办法：使用自定义验证器替代
 
 
 
